@@ -10,6 +10,8 @@ function Register() {
     <div className=" mb-4">
             
             <input type="text" id="facid" className="form-control w-50 mx-auto m-3" placeholder="username" />
+            {errors.username && errors.username.type==="required" &&
+            (<p className="text-danger text-center">Required</p>)}
 
         </div>
 
